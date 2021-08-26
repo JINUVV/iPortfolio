@@ -564,7 +564,10 @@
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+
+
+
+             <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
@@ -593,9 +596,30 @@
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
-            </form> 
+            </form>  -->
       
             <!-- modify this form HTML and place wherever you want your form -->
+
+
+            <form
+            action="https://formspree.io/f/mleaoyrl"
+            method="POST"
+          >
+            <label>
+              Your email:
+              <input type="email" name="_replyto">
+            </label>
+            <label>
+              Your message:
+              <textarea name="message"></textarea>
+            </label>
+            <!-- your other form fields go here -->
+            <button type="submit">Send</button>
+          </form>
+
+
+
+
 
           </div>
         </div>
