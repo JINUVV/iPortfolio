@@ -562,12 +562,9 @@
             </div>
 
           </div>
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-          <title>document</title>
-      </head>
-      <body>
-        <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form id="submit-form" action="">
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbywyMGh-EdxyQe5FV9BXCTY5pqusInlgNpz-NTaMZTGK-jGt7Loel1pqZ0nvog70GY/exec">
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
@@ -606,7 +603,7 @@
         $("#submit-form").submit((e)=>{
             e.preventDefault()
             $.ajax({
-                url:"https://script.google.com/macros/s/AKfycbywyMGh-EdxyQe5FV9BXCTY5pqusInlgNpz-NTaMZTGK-jGt7Loel1pqZ0nvog70GY/exec",
+                url:"https://script.google.com/macros/s/AKfycbxMOTcxWn2inPxA3_f6gKX13kNbO11uzrxfcoF-HUfIilAFxuU/exec",
                 url:"",
                 data:$("#submit-form").serialize(),
                 method:"post",
